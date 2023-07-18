@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
   min-height: 100vh;
+  background-color: rgba(158, 239, 239, 0.408);
+}
+
+.drag-container {
+  width: 450px;
+  background-color: white;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.label-container {
+  width: 320px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(161, 205, 243, 0.408);
+  border: 3px dashed rgba(119, 171, 217, 0.408);
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px 0 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.label-container img {
+  width: 40px;
+}
+
+.label-container:hover {
+  opacity: 0.6;
+}
+.on-drag {
+  opacity: 0.6;
+}
+
+.fileList-container {
+  /* height: 100px; */
+  width: 380px;
+  background-color: rgba(203, 227, 248, 0.408);
+  display: flex;
+  align-items: center;
+  border-radius: 13px;
+  margin-bottom: 10px;
+}
+
+.fileList-container img {
+  width: 50px;
+  margin: 0 10px;
+}
+
+.fileList-string p {
+  font-size: 14px;
+  width: 260px;
+}
+
+.remove-file {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  cursor: pointer;
 }
